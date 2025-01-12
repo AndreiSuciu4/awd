@@ -100,7 +100,7 @@ footer {
 
 .first-definition span, .second-definition span {
   font-weight: bold;
-  color: #007BFF;
+  color: magenta;
 }
 
 .first-definition p:last-child, .second-definition p:last-child {
@@ -206,7 +206,7 @@ footer {
 
 .perception span {
   font-weight: bold;
-  color: #007BFF;
+  color: magenta;
 }
 
 /* context */
@@ -245,7 +245,7 @@ footer {
 
 .context span {
   font-weight: bold;
-  color: #007BFF;
+  color: magenta;
 }
 
 /* word forms */
@@ -269,7 +269,7 @@ footer {
 
 .form span {
   font-weight: bold;
-  color: #007BFF;
+  color: magenta;
 }
 
 /* footer */
