@@ -2,3 +2,105 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: darkgreen;
+  margin-left: 3rem;
+  text-decoration: none;
+}
+
+.title img {
+  width: 2rem;
+  height: 1.7rem;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 43%;
+  right: 1.5rem;
+}
+
+.menu-item {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.sidebar {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1080px) {
+  .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .title img {
+    width: 1.5rem;
+    height: 1.3rem;
+  }
+
+  .menu {
+    width: 50%;
+  }
+
+  .menu-item {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .content {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 850px) {
+  .sidebar {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .sidebar {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+  }
+  .hamburger div {
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .menu {
+    display: none;
+  }
+}
