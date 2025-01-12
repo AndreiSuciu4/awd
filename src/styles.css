@@ -135,3 +135,43 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .sidebar.open {
   left: 0;
 }
+
+@media (max-width: 500px) {
+  .sidebar {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    color: white;
+    transition: top 0.3s ease;
+    padding-top: 1rem;
+    margin-bottom: 50px;
+  }
+
+  .sidebar.open {
+    top: 0;
+  }
+
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+  }
+
+  .sidebar a:hover {
+    background-color: #575757;
+  }
+
+  .sidebar-menu {
+    position: relative;
+  }
+
+  .content.shifted {
+    margin-left: 0;
+    width: 100%;
+  }
+}

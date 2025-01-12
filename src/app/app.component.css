@@ -10,9 +10,11 @@
   background-repeat: repeat;
 }
 
-.content.shifted {
-  margin-left: 180px;
-  width: calc(100% - 180px);
+@media (min-width: 501px) {
+  .content.shifted {
+    margin-left: 180px;
+    width: calc(100% - 180px);
+  }
 }
 
 .team-logo {
@@ -35,12 +37,12 @@
 }
 
 blockquote {
-  font-size: 1.4em; /* Scade puțin fontul dacă este prea mare */
+  font-size: 1.4em;
   font-style: italic;
   color: #555;
-  margin: 20px 10px; /* Adaugă spațiu lateral */
-  flex: 1 1 60%; /* Textul ocupă mai mult spațiu */
-  text-align: left; /* Poți schimba la "left" pentru mai mult echilibru */
+  margin: 20px 10px;
+  flex: 1 1 60%;
+  text-align: left;
 }
 
 footer {
