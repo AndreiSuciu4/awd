@@ -52,7 +52,7 @@
 }
 
 .quote-container {
-  width: 80%;
+  width: 90%;
   margin: 50px auto;
   padding: 20px;
   background-color: #f9f9f9;
@@ -61,16 +61,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 blockquote {
-  font-size: 1.5em;
+  font-size: 1.4em; /* Scade puțin fontul dacă este prea mare */
   font-style: italic;
   color: #555;
-  margin: 20px 0;
-  flex: 1;
-  text-align: center;
+  margin: 20px 10px; /* Adaugă spațiu lateral */
+  flex: 1 1 60%; /* Textul ocupă mai mult spațiu */
+  text-align: left; /* Poți schimba la "left" pentru mai mult echilibru */
 }
 
 footer {
@@ -86,11 +87,13 @@ footer {
 }
 
 .image-container img {
-  width: 100%;
+  width: auto;
   height: auto;
-  max-width: 200px;
+  max-width: 150px;
+  max-height: 150px;
   border-radius: 10px;
 }
+
 .general-section-style {
   width: 80%;
   margin: 50px auto;
@@ -179,10 +182,22 @@ footer {
 }
 
 .history-image-text img {
-  max-width: 30%;
-  height: auto;
-  margin-left: 0;
-  margin-bottom: 20px;
+  width: 30%;
+  border-radius: 15px;
+}
+
+@media (max-width: 800px) {
+  .history-image-text img {
+    width: 50%;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .history-image-text img {
+    width: 70%;
+    border-radius: 8px;
+  }
 }
 
 .text-column {
@@ -250,6 +265,13 @@ footer {
 .context img {
   width: 50%;
   border-radius: 15px;
+}
+
+@media (max-width: 650px) {
+  .context img {
+    width: 70%;
+    border-radius: 8px;
+  }
 }
 
 .context span {
