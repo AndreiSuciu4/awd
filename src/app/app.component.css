@@ -1,34 +1,3 @@
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: -250px;
-  width: 180px;
-  height: 100%;
-  background-color: #333;
-  color: white;
-  transition: all 0.3s ease;
-  padding-top: 5rem;
-}
-
-.sidebar a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  display: block;
-  transition: background-color 0.3s;
-}
-.sidebar-menu{
-  position: relative;
-}
-
-.sidebar a:hover {
-  background-color: #575757;
-}
-
-.sidebar.open {
-  left: 0;
-}
-
 .content {
   display: flex;
   flex-direction: row;
